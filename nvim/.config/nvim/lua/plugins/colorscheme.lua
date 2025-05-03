@@ -1,0 +1,41 @@
+return {
+	{
+		"catppuccin/nvim",
+		lazy = false,
+		name = "catppuccin",
+		priority = 1000,
+		opts = {
+			flavour = "mocha",
+			transparent_background = true,
+			default_integrations = false,
+			integrations = {
+				mason = true,
+				native_lsp = {
+					enabled = true,
+					virtual_text = {
+						errors = { "italic" },
+						hints = { "italic" },
+						warnings = { "italic" },
+						information = { "italic" },
+						ok = { "italic" },
+					},
+					underlines = {
+						errors = { "underline" },
+						hints = { "underline" },
+						warnings = { "underline" },
+						information = { "underline" },
+						ok = { "underline" },
+					},
+					inlay_hints = {
+						background = true,
+					},
+				},
+				snacks = true,
+				treesitter = true,
+			},
+		},
+		config = function()
+			vim.cmd.colorscheme("catppuccin")
+		end,
+	},
+}
