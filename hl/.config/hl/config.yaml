@@ -82,4 +82,4 @@ formatting:
 concurrency: ~
 
 # Theme
-theme: 'catppuccin'
+theme: 'catppuccin-mocha'
