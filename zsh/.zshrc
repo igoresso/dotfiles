@@ -1,14 +1,10 @@
-# Oh My Zsh
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="catppuccin-mocha"
-plugins=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
+# Prompt
+source ~/.config/zsh/catppuccin-mocha.zsh
 
-source $ZSH/oh-my-zsh.sh
-source ~/.oh-my-zsh/custom/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
+# Plugins
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/catppuccin-mocha-syntax-highlighting.zsh
 
 # Aliases
 alias ..="cd .."
@@ -19,4 +15,4 @@ alias la="ls -A"
 alias lt="ls -lth"
 
 # Tools
-eval "$(~/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
