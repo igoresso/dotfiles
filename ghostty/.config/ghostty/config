@@ -1,4 +1,25 @@
+# Appearance
 theme = dark:Catppuccin Mocha,light:Catppuccin Latte
 font-family = Cascadia Code NF
-shell-integration = zsh
+font-size = 14
+
+# Window
+window-padding-x = 4
+window-padding-y = 8
+window-padding-balance = true
+
+# Behavior
 mouse-hide-while-typing = true
+confirm-close-surface = false
+
+# Shell integration
+shell-integration = detect
+shell-integration-features = cursor,sudo,title,ssh-env,ssh-terminfo
+
+# macOS-specific
+macos-option-as-alt = left
+macos-titlebar-style = tabs
+
+# Keybindings
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+keybind = cmd+shift+enter=toggle_fullscreen
