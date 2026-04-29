@@ -1,2 +1,17 @@
 [tools]
+uv = "latest"
 node = "24"
+python = "3.14"
+ruby = "4"
+go = "1.26"
+terraform = "1.14"
+shellcheck = "latest"
+
+[env]
+UV_PYTHON = { value = "{{ tools.python.path }}", tools = true }
+
+[settings]
+idiomatic_version_file_enable_tools = ["node", "ruby"]
+
+[settings.ruby]
+compile = false
