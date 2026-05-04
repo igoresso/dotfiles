@@ -1,4 +1,4 @@
-# Appearance
+ # Appearance
 theme = dark:Catppuccin Mocha,light:Catppuccin Latte
 font-family = Cascadia Code NF
 font-size = 14
@@ -19,7 +19,3 @@ shell-integration-features = cursor,sudo,title,ssh-env,ssh-terminfo
 # macOS-specific
 macos-option-as-alt = left
 macos-titlebar-style = tabs
-
-# Keybindings
-keybind = global:cmd+grave_accent=toggle_quick_terminal
-keybind = cmd+shift+enter=toggle_fullscreen
