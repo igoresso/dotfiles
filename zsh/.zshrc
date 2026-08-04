@@ -13,6 +13,7 @@ alias ....="cd ../../.."
 alias ll="ls -lah"
 alias la="ls -A"
 alias lt="ls -lth"
+alias npx="pnpx"
 
 # Tools
 eval "$(mise activate zsh)"

@@ -21,3 +21,9 @@ vim.opt.ignorecase = true         -- Case-insensitive searching...
 vim.opt.smartcase = true          -- Unless you type a capital letter
 vim.opt.mouse = "a"               -- Enable mouse support
 vim.opt.clipboard = "unnamedplus" -- Use the system clipboard
+
+-- Diagnostics
+vim.diagnostic.config({
+  virtual_text = true,
+  severity_sort = true,
+})

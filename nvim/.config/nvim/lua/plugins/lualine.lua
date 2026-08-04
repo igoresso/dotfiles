@@ -2,8 +2,8 @@ return {
 	"nvim-lualine/lualine.nvim",
 	opts = {
 		options = {
-			theme = "catppuccin",
-			extensions = { "lazy", "mason" },
+			theme = "catppuccin-nvim",
 		},
+		extensions = { "lazy", "mason" },
 	},
 }

@@ -7,7 +7,6 @@ return {
 		opts = {
 			flavour = "mocha",
 			transparent_background = true,
-			default_integrations = false,
 			integrations = {
 				mason = true,
 				native_lsp = {
@@ -34,7 +33,8 @@ return {
 				treesitter = true,
 			},
 		},
-		config = function()
+		config = function(_, opts)
+			require("catppuccin").setup(opts)
 			vim.cmd.colorscheme("catppuccin")
 		end,
 	},

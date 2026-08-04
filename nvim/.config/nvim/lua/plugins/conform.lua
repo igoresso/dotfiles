@@ -16,10 +16,11 @@ return {
 			markdown = { "prettier" },
 			svelte = { "prettier" },
 		},
+		format_on_save = { timeout_ms = 500, lsp_format = "fallback" },
 	},
 	keys = {
 		{
-			"<leader>gf",
+			"<leader>cf",
 			function()
 				require("conform").format({ async = true, lsp_format = "fallback" })
 			end,

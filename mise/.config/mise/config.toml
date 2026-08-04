@@ -6,6 +6,7 @@ ruby = "4"
 go = "1.26"
 terraform = "1.14"
 shellcheck = "latest"
+tree-sitter = "latest"
 
 [env]
 UV_PYTHON = { value = "{{ tools.python.path }}", tools = true }
